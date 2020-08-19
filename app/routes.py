@@ -5,4 +5,5 @@ from app import app
 def index():
     #return 'Hello, World!'
     user = {'username':'Miguel'}
-    return render_template('index.html', title="Home", user=user) 
+    return render_template('index.html', user=user)
+    #title="Home", user=user) 
