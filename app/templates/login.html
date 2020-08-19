@@ -3,9 +3,12 @@
 {% block content %}
     <h1>Sign In</h1>
     <form action="" method="post" novalidate>
-        {{  form.hidden_tag()  }}
+      <!-- when action is an empty string the form is submitted to the URL -->
+        <!-- novalidate removes form validation so you can test flask validation -->
+          {{  form.hidden_tag()  }}
         <p>
             {{  form.username.label  }}
+            <br>
             {{  form.username(size=32)  }}
         </p>
         <p>
