@@ -1,3 +1,3 @@
 from app import app 
 
-#set FLASK_APP=microblog.py
+#set FLASK_APP=microblog.py     
