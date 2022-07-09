@@ -1,4 +1,6 @@
-from flask import Flask, render_template
+# set FLASK_APP=flaskblog.py
+# set flask_debug=1
+from flask import Flask, render_template, url_for
 app = Flask(__name__)
 
 posts = [
